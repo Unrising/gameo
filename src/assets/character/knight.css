@@ -1,0 +1,19 @@
+.player {
+    width: 64px;
+    height: 64px;
+    background: url("/assets/knight.png") no-repeat;
+    background-size: 400% 100%;
+}
+
+.animate-walk {
+    animation: walk-animation 0.4s steps(4) infinite;
+}
+
+@keyframes walk-animation {
+    from {background-position-x: 0%;}
+    to {background-position-x: 100%;}
+}
+
+body {
+    background: red !important;
+}
